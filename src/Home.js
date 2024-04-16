@@ -1,150 +1,16 @@
 import React from 'react';
+import avatar from './av.jpg';
+import avatarHover from './avHover.jpg';
 
 import './Home.css';
 
 function Home() {
   return (
     <div className='homeBox'>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
-      <h1>Hello Wrold</h1>
+      <div class='Avatar'>
+        <img src={avatar} />
+        <img src={avatarHover} class='image-hover' alt='hover' />
+      </div>
     </div>
   );
 }

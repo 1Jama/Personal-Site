@@ -1,4 +1,4 @@
-.navB {
-  color: black;
-  theme: dark;
+.nav {
+  justify-content: flex-start;
+  align-items: flex-start;
 }
