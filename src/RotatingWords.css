@@ -1,0 +1,215 @@
+.rwords {
+  display: flex;
+  background-color: red;
+  margin-top: 10rem;
+  margin-left: 15rem;
+}
+.content {
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  font-size: 85px;
+  line-height: 1em;
+  color: #6ccfe8;
+
+  justify-self: center;
+  align-self: center;
+}
+
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 1.3em;
+}
+
+.content:before {
+  content: '<';
+  left: 0;
+}
+
+.content:after {
+  content: '/>';
+  padding-left: 15rem;
+  right: 0;
+}
+
+.content:after,
+.content:before {
+  position: absolute;
+  top: 0;
+
+  color: #16a085;
+
+  line-height: 1.5em;
+
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.content__container__text {
+  display: inline;
+
+  margin: 0;
+}
+
+.content__container__list {
+  margin-top: 0;
+
+  list-style: none;
+
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.content__container__list__item {
+  padding: 0.2em;
+  padding-right: 1em;
+  padding-left: 0.8em;
+}
+@-webkit-keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes change {
+  0%,
+  22%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  25%,
+  47% {
+    transform: translate3d(0, -33%, 0);
+  }
+  50%,
+  72% {
+    transform: translate3d(0, -66%, 0);
+  }
+  75%,
+  97% {
+    transform: translate3d(0, -33%, 0);
+  }
+}
+
+@-o-keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes change {
+  0%,
+  22%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  25%,
+  47% {
+    transform: translate3d(0, -33%, 0);
+  }
+  50%,
+  72% {
+    transform: translate3d(0, -66%, 0);
+  }
+  75%,
+  97% {
+    transform: translate3d(0, -33%, 0);
+  }
+}
+
+@-moz-keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes change {
+  0%,
+  22%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  25%,
+  47% {
+    transform: translate3d(0, -33%, 0);
+  }
+  50%,
+  72% {
+    transform: translate3d(0, -66%, 0);
+  }
+  75%,
+  97% {
+    transform: translate3d(0, -33%, 0);
+  }
+}
+
+@keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes change {
+  0%,
+  22%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  25%,
+  47% {
+    transform: translate3d(0, -33%, 0);
+  }
+  50%,
+  72% {
+    transform: translate3d(0, -66%, 0);
+  }
+  75%,
+  97% {
+    transform: translate3d(0, -33%, 0);
+  }
+}
+/*
+// 6 is the number of animation.
+// Here, there are 4 lines :
+
+// 1 to 2
+// 2 to 3
+// 3 to 4
+// 4 to 3
+// 3 to 2
+// 2 to 1
+
+// 6x + 6y = 100 (100% duration)
+
+// HERE : 
+// y = 4 -> Animation between two lines
+// x = 12.66 -> Time spent on a line
+
+// You can define a value and calculate the other if you want change speed or the number of lines
+*/

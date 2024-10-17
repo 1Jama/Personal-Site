@@ -2,7 +2,7 @@ import SocialMediaLinks from './SocialMediaLinks';
 
 import './App.css';
 import { useCallback } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AnimatedCursor from './CursorAnimated';
 import Particles from 'react-particles';
@@ -26,34 +26,32 @@ function App() {
   }, []);
   return (
     <div className='App'>
-      <NextUIProvider>
-        <main className='dark text-foreground '>
-          <Nav />
-          <BrowserRouter>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/about' element={<About />} />
-            </Routes>
-          </BrowserRouter>
-          <div className='cursor__dot'>
-            <AnimatedCursor
-              innerSize={15}
-              outerSize={15}
-              color='137, 207, 240'
-              outerAlpha={0.4}
-              innerScale={0.7}
-              outerScale={5}
-            />
-          </div>
-          <SocialMediaLinks />
-          <Particles
-            id='tsparticles'
-            options={particlesPreset}
-            init={particlesInit}
-            loaded={particlesLoaded}
-          />
+      <Router>
+        <Nav />
+        <main className='main-content'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/About' element={<About />} />
+          </Routes>
         </main>
-      </NextUIProvider>
+      </Router>
+      <div className='cursor__dot'>
+        <AnimatedCursor
+          innerSize={15}
+          outerSize={15}
+          color='137, 207, 240'
+          outerAlpha={0.4}
+          innerScale={0.7}
+          outerScale={5}
+        />
+      </div>
+      <SocialMediaLinks />
+      <Particles
+        id='tsparticles'
+        options={particlesPreset}
+        init={particlesInit}
+        loaded={particlesLoaded}
+      />
     </div>
   );
 }
