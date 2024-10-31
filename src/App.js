@@ -1,5 +1,5 @@
 import SocialMediaLinks from './SocialMediaLinks';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { useCallback } from 'react';
 
@@ -9,10 +9,11 @@ import Particles from 'react-particles';
 import particlesPreset from './particles';
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from 'tsparticles-slim'; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
-import { NextUIProvider } from '@nextui-org/react';
+
 import Home from './Home';
 import Nav from './Nav';
 import About from './About';
+import Projects from './Projects';
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -26,12 +27,19 @@ function App() {
   }, []);
   return (
     <div className='App'>
+      <Particles
+        id='tsparticles'
+        options={particlesPreset}
+        init={particlesInit}
+        loaded={particlesLoaded}
+      />
       <Router>
         <Nav />
         <main className='main-content'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/About' element={<About />} />
+            <Route path='/Projects' element={<Projects />} />
           </Routes>
         </main>
       </Router>
@@ -39,19 +47,13 @@ function App() {
         <AnimatedCursor
           innerSize={15}
           outerSize={15}
-          color='137, 207, 240'
+          color='34, 211, 238'
           outerAlpha={0.4}
           innerScale={0.7}
           outerScale={5}
         />
       </div>
       <SocialMediaLinks />
-      <Particles
-        id='tsparticles'
-        options={particlesPreset}
-        init={particlesInit}
-        loaded={particlesLoaded}
-      />
     </div>
   );
 }

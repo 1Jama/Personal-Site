@@ -1,5 +1,6 @@
 import React from 'react';
 import avatar from './av.jpg';
+
 import avatarHover from './avHover.jpg';
 import MovingComponent from 'react-moving-text';
 import RotatingWords from './RotatingWords';

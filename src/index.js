@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // 1. import `NextUIProvider` component
-import { NextUIProvider } from '@nextui-org/react';
+
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';

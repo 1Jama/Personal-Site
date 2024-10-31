@@ -16,7 +16,6 @@ const Nav = () => {
       <div className='container'>
         <div className='logo'>
           <Logo />
-          Jama Farah
         </div>
         <div className='menu-icon' onClick={handleShowNavbar}>
           <Hamburger />

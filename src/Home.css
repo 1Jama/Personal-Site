@@ -19,7 +19,7 @@ html {
   width: 30rem;
   height: 30rem;
   box-sizing: border-box;
-  border: 5px #14d0ff solid;
+  border: 5px rgb(34 211 238) solid;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 5px 15px 0px rgb(243, 251, 255);
@@ -71,7 +71,7 @@ h1 {
   font-size: 4.5rem;
   font-weight: bold;
   line-height: 1.5;
-  color: #78bccd;
+  color: rgb(34 211 238);
 }
 
 @keyframes float {
