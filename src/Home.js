@@ -28,7 +28,7 @@ function Home() {
         </div>
         <div className='firstName'>
           <h1>
-            <span>JAMA FARAH</span>
+            <span className='homeName'>JAMA FARAH</span>
           </h1>
         </div>
         <RotatingWords />

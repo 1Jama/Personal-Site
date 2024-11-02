@@ -2,7 +2,6 @@ import React from 'react';
 import './ProjectCard.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
 import { BsGithub } from 'react-icons/bs';
 
 const ProjectCard = (props) => {
@@ -15,16 +14,25 @@ const ProjectCard = (props) => {
           <Card.Text>{props.description}</Card.Text>
         </Card.Body>
         <Card.Body>{props.technology}</Card.Body>
-        <Card.Body>
-          <Card.Link href='#'>
-            <Button variant='primary'>
-              <BsGithub />
-            </Button>
-          </Card.Link>
-          <Card.Link href='#'>
-            <Button variant='primary'>Demo</Button>
-          </Card.Link>
-        </Card.Body>
+        <div className='buttonContainer'>
+          <Button
+            className='projButton'
+            variant='primary'
+            href={props.gitUrl}
+            target='_blank'
+          >
+            <BsGithub />
+          </Button>
+
+          <Button
+            className='projButton'
+            variant='primary'
+            href={props.url}
+            target='_blank'
+          >
+            Demo
+          </Button>
+        </div>
       </Card>
     </div>
   );

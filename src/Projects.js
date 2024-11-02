@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import './Projects.css';
-import avatar from './av.jpg';
 import { ProjectData } from './ProjectData';
 import { IoBuildOutline } from 'react-icons/io5';
 
@@ -36,6 +35,8 @@ function Projects() {
               title={project.title}
               description={project.description}
               technology={tech(project.technology.split(' '))}
+              url={project.url}
+              gitUrl={project.gitUrl}
             />
           );
         })}

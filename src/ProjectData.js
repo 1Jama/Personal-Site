@@ -1,17 +1,23 @@
 import avatar from './av.jpg';
+import spanThumbnail from './projSpan.JPG';
+import portThumbnail from './projPortfolio.JPG';
 export const ProjectData = [
   {
-    imgSrc: avatar,
-    title: 'Test',
+    imgSrc: spanThumbnail,
+    title: 'Spanish Guesser',
     description:
-      'dolore cillum sint voluptate cupidatat dolore elit ad deserunt qui labore commodo minim aliqua et cillum Lorem dolor non sit',
-    technology: 'react react react react react react',
+      'Dynamic React app to practise basic levels of the Spanish language. Contains two levels of difficulty tallying score on right answers. Robost backend made using MongoDB and Node.Js, as well as utilizing multiple Restful APIs for things like determining corectness in hard mode.',
+    technology: 'React React-Hooks Node.JS MongoDB Restful-APIs HTML CSS',
+    url: 'https://spanishguesser.com/Guess',
+    gitUrl: 'https://github.com/1Jama/guess-the-word',
   },
   {
-    imgSrc: avatar,
-    title: 'Test',
+    imgSrc: portThumbnail,
+    title: 'Personal Portfolio Website',
     description:
-      'dolore cillum sint voluptate cupidatat dolore elit ad deserunt qui labore commodo minim aliqua et cillum Lorem dolor non sit',
-    technology: 'react react react react react react',
+      'Website where I host my projects as well as have information listed about myself. Built using React, Bootstrap, Tailwind',
+    technology: 'React React-Hooks Bootstrap Tailwind HTML CSS',
+    url: 'https://spanishguesser.com/Guess',
+    gitUrl: 'https://github.com/1Jama/Personal-Site',
   },
 ];
