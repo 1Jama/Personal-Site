@@ -14,6 +14,7 @@ import Home from './Home';
 import Nav from './Nav';
 import About from './About';
 import Projects from './Projects';
+import Resume from './Resume';
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -40,6 +41,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/About' element={<About />} />
             <Route path='/Projects' element={<Projects />} />
+            <Route path='/Resume' element={<Resume />} />
           </Routes>
         </main>
       </Router>
