@@ -1,6 +1,10 @@
 import React from 'react';
-
+import EmblaCarousel from './techCarousel.js';
 import './About.css';
+
+const OPTIONS = { loop: true };
+const SLIDE_COUNT = 20;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function About() {
   return (
@@ -24,6 +28,9 @@ function About() {
           Outside of programming somf of my hobbies include gaming, music,
           watching sports (specifically the NBA) and going to the gym!
         </p>
+      </div>
+      <div className='carouselContainer'>
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </div>
     </div>
   );

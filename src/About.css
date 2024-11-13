@@ -21,6 +21,9 @@ h2 {
   margin-left: 10rem;
   margin-top: 2rem;
 }
+.carouselContainer {
+  margin-top: 7rem;
+}
 
 @keyframes wave-animation {
   0% {
