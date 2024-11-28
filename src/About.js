@@ -1,10 +1,14 @@
 import React from 'react';
 import EmblaCarousel from './techCarousel.js';
+import { CarouselData } from './CarouselData.js';
 import './About.css';
 
 const OPTIONS = { loop: true };
-const SLIDE_COUNT = 20;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+const SLIDE_COUNT = CarouselData.length;
+console.log(CarouselData);
+
+const SLIDES = Array.from(CarouselData);
+//const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function About() {
   return (

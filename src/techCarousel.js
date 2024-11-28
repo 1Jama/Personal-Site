@@ -31,7 +31,7 @@ const EmblaCarousel = (props) => {
         <div className='embla__container'>
           {slides.map((index) => (
             <div className='embla__slide' key={index}>
-              <div className='embla__slide__number'>{index + 1}</div>
+              <div className='embla__slide__number'>{index}</div>
             </div>
           ))}
         </div>
