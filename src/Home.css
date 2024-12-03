@@ -114,16 +114,4 @@ h1 {
   h1 {
     --t: 0.06em; /* thickness of the underline */
   }
-
-  .content {
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-
-    font-size: 3rem;
-    line-height: 1em;
-    color: rgb(34 211 238);
-
-    justify-self: center;
-    align-self: center;
-  }
 }

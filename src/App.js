@@ -1,5 +1,6 @@
 import SocialMediaLinks from './SocialMediaLinks';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
 import { useCallback } from 'react';
 
@@ -11,7 +12,7 @@ import particlesPreset from './particles';
 import { loadSlim } from 'tsparticles-slim'; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
 import Home from './Home';
-import Nav from './Nav';
+import SiteNavbar from './SiteNavbar';
 import About from './About';
 import Projects from './Projects';
 import Resume from './Resume';
@@ -34,17 +35,17 @@ function App() {
         init={particlesInit}
         loaded={particlesLoaded}
       />
-      <Router>
-        <Nav />
-        <main className='main-content'>
+      <SiteNavbar />
+      <main className='main-content'>
+        <Router>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/About' element={<About />} />
             <Route path='/Projects' element={<Projects />} />
             <Route path='/Resume' element={<Resume />} />
           </Routes>
-        </main>
-      </Router>
+        </Router>
+      </main>
       <div className='cursor__dot'>
         <AnimatedCursor
           innerSize={15}
@@ -55,6 +56,7 @@ function App() {
           outerScale={5}
         />
       </div>
+
       <SocialMediaLinks />
     </div>
   );

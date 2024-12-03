@@ -13,7 +13,7 @@ const SLIDES = Array.from(CarouselData);
 function About() {
   return (
     <div className='homeBox'>
-      <h1>
+      <h1 className='aboutHeader'>
         Hey, I'm Jama <span className='wave'>👋</span>
       </h1>
       <h2>Who I am</h2>
@@ -25,11 +25,11 @@ function About() {
         <br />
         <p>
           I am always learning about new and advancing technologies to keep
-          myself in the know
+          myself in the know.
         </p>
         <br />
         <p>
-          Outside of programming somf of my hobbies include gaming, music,
+          Outside of programming some of my hobbies include gaming, music,
           watching sports (specifically the NBA) and going to the gym!
         </p>
       </div>
