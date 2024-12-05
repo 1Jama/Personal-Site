@@ -21,10 +21,15 @@ body {
 .navLink {
   margin: 1rem;
 }
+.nav-link.active {
+  color: aqua !important;
+}
 .logo {
+  justify-self: flex-start;
   display: flex;
   flex-direction: row;
-
+  justify-content: center;
+  align-content: center;
   align-items: center;
 }
 
@@ -35,4 +40,33 @@ body {
 .navContainer {
   display: flex;
   flex-direction: row;
+}
+.resumeButton {
+  margin-top: -5px;
+  align-self: center;
+  justify-self: center;
+  background-color: rgb(31, 30, 30) !important;
+  border-color: rgba(34 211 238) !important;
+  outline: transparent !important;
+}
+
+@media screen and (max-width: 767px) {
+  .navLink {
+  }
+
+  .bg-body-tertiary {
+    margin-top: 1.5rem;
+  }
+
+  #basic-navbar-nav {
+    margin-left: -7.3rem !important;
+  }
+
+  .navBurger.collapsed {
+    margin-left: -3.3rem;
+  }
+
+  .navBurger {
+    margin-left: -7.3rem !important;
+  }
 }

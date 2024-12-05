@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../Components/ProjectCard';
 import './Projects.css';
-import { ProjectData } from './ProjectData';
+import { ProjectData } from '../Components/ProjectData';
 import { IoBuildOutline } from 'react-icons/io5';
 
 function Projects() {

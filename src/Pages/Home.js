@@ -3,7 +3,7 @@ import avatar from './av.jpg';
 
 import avatarHover from './avHover.jpg';
 import MovingComponent from 'react-moving-text';
-import RotatingWords from './RotatingWords';
+import RotatingWords from '../Components/RotatingWords';
 
 import { TypeAnimation } from 'react-type-animation';
 

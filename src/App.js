@@ -1,21 +1,21 @@
-import SocialMediaLinks from './SocialMediaLinks';
+import SocialMediaLinks from './Components/SocialMediaLinks';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 import { useCallback } from 'react';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import AnimatedCursor from './CursorAnimated';
+import AnimatedCursor from './Components/CursorAnimated';
 import Particles from 'react-particles';
-import particlesPreset from './particles';
+import particlesPreset from './Components/particles';
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from 'tsparticles-slim'; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
-import Home from './Home';
-import SiteNavbar from './SiteNavbar';
-import About from './About';
-import Projects from './Projects';
-import Resume from './Resume';
+import Home from './Pages/Home';
+import SiteNavbar from './Components/SiteNavbar';
+import About from './Pages/About';
+import Projects from './Pages/Projects';
+import Resume from './Pages/Resume';
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -35,13 +35,14 @@ function App() {
         init={particlesInit}
         loaded={particlesLoaded}
       />
-      <SiteNavbar />
+
       <main className='main-content'>
         <Router>
+          <SiteNavbar />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/About' element={<About />} />
-            <Route path='/Projects' element={<Projects />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/projects' element={<Projects />} />
             <Route path='/Resume' element={<Resume />} />
           </Routes>
         </Router>

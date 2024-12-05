@@ -1,6 +1,6 @@
 import React from 'react';
-import EmblaCarousel from './techCarousel.js';
-import { CarouselData } from './CarouselData.js';
+import EmblaCarousel from '../Components/techCarousel.js';
+import { CarouselData } from '../Components/CarouselData.js';
 import './About.css';
 
 const OPTIONS = { loop: true };
