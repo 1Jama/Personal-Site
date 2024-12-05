@@ -1,7 +1,7 @@
 import React from 'react';
 import EmblaCarousel from '../Components/techCarousel.js';
 import { CarouselData } from '../Components/CarouselData.js';
-import './About.css';
+import '../Styles/About.css';
 
 const OPTIONS = { loop: true };
 const SLIDE_COUNT = CarouselData.length;

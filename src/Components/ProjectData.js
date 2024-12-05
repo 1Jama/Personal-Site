@@ -1,6 +1,5 @@
-import avatar from './av.jpg';
-import spanThumbnail from './projSpan.JPG';
-import portThumbnail from './projPortfolio.JPG';
+import spanThumbnail from '../Images/projSpan.JPG';
+import portThumbnail from '../Images/projPortfolio.JPG';
 export const ProjectData = [
   {
     imgSrc: spanThumbnail,

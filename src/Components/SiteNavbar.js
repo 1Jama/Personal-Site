@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Styles/SiteNavbar.css';
 import React, { useState } from 'react';
-import './SiteNavbar.css';
 import { Spin as Hamburger } from 'hamburger-react';
 import Logo from './Logo';
 import Container from 'react-bootstrap/Container';

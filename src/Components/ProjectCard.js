@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProjectCard.css';
+import '../Styles/ProjectCard.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { BsGithub } from 'react-icons/bs';

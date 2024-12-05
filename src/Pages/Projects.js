@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProjectCard from '../Components/ProjectCard';
-import './Projects.css';
+import '../Styles/Projects.css';
 import { ProjectData } from '../Components/ProjectData';
 import { IoBuildOutline } from 'react-icons/io5';
 

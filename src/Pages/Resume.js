@@ -1,6 +1,6 @@
 import React from 'react';
-import rPDF from './resumeSite.pdf';
-import './Resume.css';
+import rPDF from '../Components/resumeSite.pdf';
+import '../Styles/Resume.css';
 
 const checkDevice = (devicePx) => {};
 

@@ -6,7 +6,7 @@ import {
   usePrevNextButtons,
 } from './EmblaCarouselArrowButtons';
 import useEmblaCarousel from 'embla-carousel-react';
-import './techCarousel.css';
+import '../Styles/techCarousel.css';
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props;

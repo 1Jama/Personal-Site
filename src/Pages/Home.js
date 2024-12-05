@@ -1,14 +1,14 @@
 import React from 'react';
-import avatar from './av.jpg';
+import avatar from '../Images/av.jpg';
 
-import avatarHover from './avHover.jpg';
+import avatarHover from '../Images/avHover.jpg';
 import MovingComponent from 'react-moving-text';
 import RotatingWords from '../Components/RotatingWords';
 
 import { TypeAnimation } from 'react-type-animation';
 
-import './Home.css';
-import './RotatingWords.css';
+import '../Styles/Home.css';
+import '../Styles/RotatingWords.css';
 
 function Home() {
   return (
