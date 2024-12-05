@@ -1,7 +1,7 @@
 import SocialMediaLinks from './Components/SocialMediaLinks';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './App.css';
+import './Styles/App.css';
 import { useCallback } from 'react';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
