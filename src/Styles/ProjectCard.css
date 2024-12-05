@@ -1,0 +1,76 @@
+.customCard {
+  height: fit-content !important;
+  width: 30rem;
+  background-color: rgb(28, 28, 28) !important;
+  margin: 2rem;
+  transition: all 0.5s ease 0s !important;
+  box-shadow: 0px 0px 5px 0px #0ff !important;
+  margin: 2rem;
+}
+.customCard:hover {
+  transform: scale(1.02);
+  overflow: hidden !important;
+  box-shadow: 0px 0px 10px 0px #0ff !important;
+}
+
+.card-body {
+  pointer-events: none !important;
+}
+
+.techUsed {
+  white-space: nowrap;
+}
+
+.projectImg {
+  height: 20rem;
+  border-radius: 0.2rem;
+  pointer-events: none;
+}
+
+.cardTitle {
+  margin-top: 1rem;
+  margin-bottom: -0.2rem;
+  color: rgb(34 211 238);
+}
+.projButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 5rem;
+  height: 2rem;
+  background-color: rgb(19, 57, 63) !important;
+  border-color: rgb(108, 213, 229) !important;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  color: rgb(34 211 238) !important;
+  justify-content: center;
+}
+
+.buttonContainer,
+.projButton :hover {
+  box-shadow: none !important;
+}
+.projButton :hover {
+  animation: none !important;
+}
+.buttonContainer :hover {
+  animation: bounce2 1s ease infinite;
+}
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}

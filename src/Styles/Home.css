@@ -1,0 +1,117 @@
+.homeBox {
+  padding-top: 7rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Avatar {
+  width: 30rem;
+  height: 30rem;
+  box-sizing: border-box;
+  border: 5px rgb(34 211 238) solid;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgb(243, 251, 255);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  margin-top: -9rem;
+}
+.image-hover:hover {
+  opacity: 1;
+}
+
+h1 {
+  --a: -45deg; /* control the angle */
+  --t: 0.23em; /* thickness of the underline */
+  --i: 30rem;
+}
+
+.homeName {
+  --_s: calc(var(--t) * cos(var(--a)));
+  background: linear-gradient(
+      var(--a),
+      #0000 var(--_s),
+      currentColor 0 calc(100% - var(--_s)),
+      #0000 0
+    )
+    bottom/var(--i, 90%) var(--t) no-repeat;
+  padding: 0 0.25em calc(var(--t) + 0.1em);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: 0.3s;
+  cursor: pointer;
+}
+h1:hover span {
+  --i: 100%;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: rgb(34 211 238);
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(128, 128, 128, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(128, 128, 128, 0.2);
+    transform: translatey(-50px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(128, 128, 128, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Avatar {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-self: center;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .image-hover {
+    margin-top: -5.9rem;
+    align-self: center;
+  }
+
+  span {
+    --i: 100%;
+  }
+
+  h1 {
+    --t: 0.06em; /* thickness of the underline */
+  }
+}

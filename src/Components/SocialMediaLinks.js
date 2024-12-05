@@ -1,6 +1,6 @@
 const SocialMediaLinks = () => {
   return (
-    <div className='fixed pl-4 left-0 bottom-0 z-10'>
+    <div className='fixed pl-4 -left-1 bottom-0 z-10'>
       <a href='https://github.com/1Jama' target='_blank' rel='noreferrer'>
         <svg
           width='24'
