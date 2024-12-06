@@ -4,8 +4,6 @@ import { CarouselData } from '../Components/CarouselData.js';
 import '../Styles/About.css';
 
 const OPTIONS = { loop: true };
-const SLIDE_COUNT = CarouselData.length;
-console.log(CarouselData);
 
 const SLIDES = Array.from(CarouselData);
 //const SLIDES = Array.from(Array(SLIDE_COUNT).keys());

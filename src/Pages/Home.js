@@ -5,8 +5,6 @@ import avatarHover from '../Images/avHover.jpg';
 import MovingComponent from 'react-moving-text';
 import RotatingWords from '../Components/RotatingWords';
 
-import { TypeAnimation } from 'react-type-animation';
-
 import '../Styles/Home.css';
 import '../Styles/RotatingWords.css';
 
@@ -23,7 +21,7 @@ function Home() {
         fillMode='none'
       >
         <div className='Avatar'>
-          <img src={avatar} />
+          <img src={avatar} alt='' />
           <img src={avatarHover} class='image-hover' alt='hover' />
         </div>
         <div className='firstName'>
@@ -31,7 +29,9 @@ function Home() {
             <span className='homeName'>JAMA FARAH</span>
           </h1>
         </div>
-        <RotatingWords />
+        <div className='rotWords'>
+          <RotatingWords />
+        </div>
       </MovingComponent>
     </div>
   );

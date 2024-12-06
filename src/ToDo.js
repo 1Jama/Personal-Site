@@ -1,3 +1,3 @@
 //contact form
 
-//fix folder srtucture
+//update resume

@@ -112,6 +112,14 @@ h1 {
   }
 
   h1 {
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
     --t: 0.06em; /* thickness of the underline */
+    font-size: 3rem;
+  }
+
+  .rotWords {
+    margin-top: -2rem;
+    margin-left: -0.5rem;
   }
 }
