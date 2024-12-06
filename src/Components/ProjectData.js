@@ -16,7 +16,7 @@ export const ProjectData = [
     description:
       'Website where I host my projects as well as have information listed about myself. Built using React, Bootstrap, Tailwind',
     technology: 'React React-Hooks Bootstrap Tailwind HTML CSS',
-    url: 'https://spanishguesser.com/Guess',
+    url: 'Jamafarah.com',
     gitUrl: 'https://github.com/1Jama/Personal-Site',
   },
 ];
