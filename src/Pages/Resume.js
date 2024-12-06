@@ -2,8 +2,6 @@ import React from 'react';
 import rPDF from '../Components/resumeSite.pdf';
 import '../Styles/Resume.css';
 
-const checkDevice = (devicePx) => {};
-
 function Resume() {
   return (
     <div className='pdfContainer'>
