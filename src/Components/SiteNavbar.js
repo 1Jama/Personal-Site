@@ -6,7 +6,7 @@ import Logo from './Logo';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
 function SiteNavbar() {
@@ -29,26 +29,28 @@ function SiteNavbar() {
             </Navbar.Toggle>
             <Navbar.Collapse id='basic-navbar-nav'>
               <Nav activeKey={location.pathname} className='me-auto'>
-                <Nav.Link className='navLink' href='/' eventKey='/'>
+                <Nav.Link as={Link} className='navLink' to='/' eventKey='/'>
                   Home
                 </Nav.Link>
                 <Nav.Link
+                  as={Link}
                   eventKey='/about'
                   className='navLink'
-                  href='/about'
+                  to='/about'
                   activeClassName='active'
                 >
                   About Me
                 </Nav.Link>
                 <Nav.Link
+                  as={Link}
                   eventKey='/projects'
                   className='navLink'
-                  href='/projects'
+                  to='/projects'
                   activeClassName='active'
                 >
                   Projects
                 </Nav.Link>
-                <Nav.Link className='navLink' href='/resume'>
+                <Nav.Link as={Link} className='navLink' to='/resume'>
                   <Button className='resumeButton'>Resume</Button>
                 </Nav.Link>
               </Nav>
