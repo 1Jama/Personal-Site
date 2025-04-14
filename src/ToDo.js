@@ -1,3 +1,4 @@
 //contact form
 
-//update resume
+//resume make periods consistent
+//make 2nd resume with summary

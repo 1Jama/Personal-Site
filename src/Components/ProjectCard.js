@@ -6,7 +6,12 @@ import { BsGithub } from 'react-icons/bs';
 
 const ProjectCard = (props) => {
   return (
-    <div id='wholeCard'>
+    <a
+      id='wholeCard'
+      href={props.url}
+      target='_blank'
+      style={{ textDecoration: 'none' }}
+    >
       <Card className='customCard'>
         <Card.Img className='projectImg' variant='top' src={props.imgSrc} />
         <Card.Body className='cardBody'>
@@ -34,7 +39,7 @@ const ProjectCard = (props) => {
           </Button>
         </div>
       </Card>
-    </div>
+    </a>
   );
 };
 
