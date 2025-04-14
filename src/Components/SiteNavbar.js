@@ -16,10 +16,12 @@ function SiteNavbar() {
     <div className='navbar'>
       <Navbar variant='dark' expand='sm' className='bg-body-tertiary'>
         <Container className='navContainer'>
-          <div className='logo'>
-            <Logo />
-            <Navbar.Brand href='/'>Jama Farah</Navbar.Brand>
-          </div>
+          <Link to='/' style={{ textDecoration: 'none' }}>
+            <div className='logo'>
+              <Logo />
+              <Navbar.Brand>Jama Farah</Navbar.Brand>
+            </div>
+          </Link>
           <div className='navContent'>
             <Navbar.Toggle
               className='navBurger'
